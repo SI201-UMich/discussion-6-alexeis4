@@ -113,8 +113,20 @@ class HorseRaces:
 ###############################################################################
 ##### TASK 3
 ###############################################################################
-        
+    
     def horse_personal_best(self):
+        result_dict = {}
+        for horse in self.race_dict:
+            result_dict[horse] = self.horse_fastest_race(horse)
+        return result_dict
+
+
+    #     fastest_dict = {}
+    #     for racehorse in load_results(race_dict):
+    #         for race in racehorse[1]:
+    #             keys = race.keys()
+                # if 
+
         '''
         Calculate the fastest race and time for each horse.
 
